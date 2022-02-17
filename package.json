@@ -32,6 +32,7 @@
     "wait-on:server": "wait-on http://localhost:3090/",
     "start": "concurrently  \"npm run db:reset && npm run start:server\" \"npm run wait-on:server && npm run start:client\""
   },
+  "proxy": "http://localhost:3090",
   "eslintConfig": {
     "extends": [
       "react-app",

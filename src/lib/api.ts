@@ -1,6 +1,6 @@
 export const getAccounts = async () => {
   try {
-    let response = await fetch("http://localhost:3090/accounts", {
+    let response = await fetch("/accounts", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -20,7 +20,7 @@ export const getAccounts = async () => {
 
 export const getWallets = async () => {
   try {
-    let response = await fetch("http://localhost:3090/wallets", {
+    let response = await fetch("/wallets", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -40,7 +40,7 @@ export const getWallets = async () => {
 
 export const postWallets = async (currency: string) => {
   try {
-    let response = await fetch("http://localhost:3090/accounts", {
+    let response = await fetch("/accounts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
