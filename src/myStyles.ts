@@ -20,6 +20,7 @@ export const Content = styled.div`
     font-weight: bold;
     font-size: 16px;
     background: #ffffff;
+    cursor: pointer;
   }
   .card-container {
     display: grid;
@@ -72,8 +73,8 @@ export const Card = styled.div`
     color: #ffffff;
     font-weight: bold;
     margin: -1rem 0;
-    p{
-      padding: 3px
+    p {
+      padding: 3px;
     }
   }
   .image {
