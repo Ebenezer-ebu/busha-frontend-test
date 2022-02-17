@@ -175,4 +175,7 @@ export const TryAgain = styled.div`
   p {
       margin: 40px 0;
   }
+  button {
+    background: #000000;
+  }
 `;

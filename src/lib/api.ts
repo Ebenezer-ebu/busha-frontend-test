@@ -1,6 +1,8 @@
+const URL = process.env.REACT_APP_URL;
+
 export const getAccounts = async () => {
   try {
-    let response = await fetch("/accounts", {
+    let response = await fetch(`${URL}/accounts`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -20,7 +22,7 @@ export const getAccounts = async () => {
 
 export const getWallets = async () => {
   try {
-    let response = await fetch("/wallets", {
+    let response = await fetch(`${URL}/wallets`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -40,7 +42,7 @@ export const getWallets = async () => {
 
 export const postWallets = async (currency: string) => {
   try {
-    let response = await fetch("/accounts", {
+    let response = await fetch(`${URL}/accounts`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

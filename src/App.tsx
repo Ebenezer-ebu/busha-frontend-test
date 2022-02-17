@@ -8,7 +8,6 @@ function App() {
       <Header />
       <div className="side_content">
         <SideBar />
-        {/* <Wallets /> */}
         <Accounts />
       </div>
     </div>
