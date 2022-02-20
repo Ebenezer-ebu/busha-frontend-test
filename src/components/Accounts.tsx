@@ -80,7 +80,6 @@ const Accounts = () => {
   useEffect(() => {
     getAccountsInfo();
   }, []);
-  console.log(state.accounts);
   return (
     <Content>
       {state.isLoading ? (

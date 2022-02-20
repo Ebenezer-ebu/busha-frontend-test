@@ -1,12 +1,19 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { sidebarData } from "../lib/sidebarData";
 
 const SideBar = () => {
+  const [active, setActive] = useState("Wallets");
   return (
     <SidebarContainer>
       <ul className="sidebar_list">
         {sidebarData.map((val, index) => (
-          <li id="title" key={index} className="row">
+          <li
+            id={active === val.title ? "active" : ""}
+            key={index}
+            className="row"
+            onClick={() => setActive(val.title)}
+          >
             {val.title}
           </li>
         ))}
